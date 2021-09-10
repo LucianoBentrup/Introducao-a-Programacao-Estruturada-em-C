@@ -24,21 +24,25 @@ using namespace std;
             cout << "Insira sua idade:";
             cin >> p.idade;
 
-                bool int_idade, string_nome; //True or false
-                int_idade=((int)p.idade == p.idade);
-                string_nome=((string)p.nome == p.nome);
+                        //Em teste
+                        
+                        /*bool int_idade, string_nome; //True or false
+                        int_idade=((int)p.idade == p.idade);
+                        string_nome=((string)p.nome == p.nome);
 
-                if (int_idade&&string_nome)
-                cout << "Cadastro efetuado com sucesso!";
-                else 
-                cout << "Falha ao cadastrar!";
+                        if (int_idade&&string_nome)
+                        cout << "Cadastro efetuado com sucesso!";
+                        else 
+                        cout << "Falha ao cadastrar!"; */
+
+                        //Em teste
 
         }//Fim Funcao "cadastrar"
 
     
         void exibir()
         {
-        cout << "Nome:" << p.nome; 
+        cout << "Nome:" << p.nome << endl; 
         cout << "Idade:" << p.idade;
         }//Fim funcao "exibir"
 
@@ -50,7 +54,7 @@ using namespace std;
         cout << "1 - Cadastrar" <<endl;
         cout << "2 - Exibir" << endl; 
         cout << "9 - Sair" << endl;
-        cout << "Qual opcao voce deseja executar" << endl;
+        cout << "Qual opcao voce deseja executar:";
         cin >> opcao; 
         // Fim Menu
 
