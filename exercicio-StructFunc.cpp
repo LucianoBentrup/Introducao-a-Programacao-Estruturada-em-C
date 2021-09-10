@@ -19,12 +19,16 @@ int opcao; //Para Escolher a opcao no menu.
  
     void cadastrar()    
     {
-        cout << "Insira seu nome:"
+        cout << "Insira seu nome:";
         cin >> p.nome; 
-        cout << Insira sua idade;
-        cin >> p.idade
-        
-            if (p.nome==string && p.idade==int)
+        cout << "Insira sua idade:";
+        cin >> p.idade;
+
+            bool int_idade, string_nome; //True or false
+            int_idade=((int)p.idade == p.idade);
+            string_nome=((string)p.nome == p.nome);
+
+            if (int_idade&&string_nome)
                 cout << "Cadastro efetuado com sucesso!";
             else 
                 cout << "Falha ao cadastrar!";
