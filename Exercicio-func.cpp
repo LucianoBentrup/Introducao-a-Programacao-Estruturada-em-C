@@ -38,6 +38,8 @@ int main() {
   while (opcao != 9){
 
      // Menu
+
+    cout << "========Menu=========" << endl;
     cout<<"\n 1 - somar \n";
     cout<<"\n 2 - subtrair \n";
     cout<<"\n 3 - multiplicar \n";
