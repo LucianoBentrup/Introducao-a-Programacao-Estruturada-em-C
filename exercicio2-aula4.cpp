@@ -21,5 +21,5 @@ int main()
     cout << "Insira seu salario";
     cin >> salario;
 
-    cout << "Seu salario é de " << exerc2(idade,salario) << " reais"; 
+    cout << "Seu salario é de " << exerc2(salario) << " reais"; //erro
 }
