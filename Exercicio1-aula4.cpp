@@ -15,5 +15,6 @@ int main()
     cout << "Insira o valor: ";
     cin >> numero;
 
+    cout << "Novo valor = " << exerc1(numero);
 
 }
