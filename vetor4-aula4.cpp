@@ -2,21 +2,22 @@
 using namespace std; 
 
 
-#define MAX 12;
+#define MAX 12
 int valor (int v[]) 
 {
     int menor = v[0]; 
     for (int x=0; x<MAX; x++)
     {
-        if(int v[x]<menor)
+        if(v[x]<menor)
         {
-            menor = v[i];
+            menor = v[x];
         }
     }
 
 return menor;
 
 }
+
 
 int main()
 {
