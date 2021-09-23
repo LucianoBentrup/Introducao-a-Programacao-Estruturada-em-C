@@ -1,0 +1,84 @@
+#include <iostream>
+
+/**
+
+1) faca um programa para ler nome, sexo(1-feminino,2-masculino), idade, salario. Pede:
+
+a) adicione 50 reais as pessoas do sexo masculino com idade entre 18 e 25 anos
+
+b) adicione 150 reais as pessoas do sexo masculino com idade entre 26 e 30 anos
+
+c) adicione 250 reais as pessoas do sexo feminino com idade entre 18 e 25 anos
+
+d) adicione 350 reais as pessoas do sexo feminino com idade entre 25 e 30 anos
+
+Exiba ao final o nome e o novo salario.
+**/
+
+using namespace std;
+
+
+  string nome;
+  int idade;
+  int sexo;
+  float salario;
+
+
+float questaoA(float salario) {
+
+  if (idade>=18 && idade <=25 && sexo==2) {
+    salario = salario + 50;
+  }
+  return salario;
+}
+
+
+float questaoB(float salario) {
+
+  if (sexo==2 && idade>=26 && idade <=30 ) {
+    salario = salario + 150;
+  }
+
+  return salario;
+}
+
+float questaoC(float salario) {
+
+  if (sexo==1 && idade>=18 && idade<=25){
+    salario = salario + 250;
+  }
+  return salario;
+}
+
+
+float questaoD(float salario) {
+
+  if(sexo==1 && idade>=25 && idade<=30){
+     salario = salario + 350;
+  }
+
+  return salario;
+}
+
+int main() {
+
+  cout << "\n Digite Nome:";
+  cin>>nome;
+  cout << "\n Digite Idade:";
+  cin>>idade;
+  cout << "\n Digite Sexo: (1-feminino, 2-masculino)";
+  cin>>sexo;
+  cout << "\n Digite Salario:";
+  cin>>salario;
+  
+  salario = questaoA(salario);//
+  salario = questaoB(salario);
+  salario = questaoC(salario);
+  salario = questaoD(salario);
+
+  
+  cout<<"\n Nome: "<< nome <<endl;
+  cout<<"\n Salario: "<< salario <<endl;
+
+
+}
